@@ -333,7 +333,7 @@ footer {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 780px) {
     /* Ajustes generales para móviles */
     body {
         font-size: 14px;
@@ -351,11 +351,28 @@ footer {
     .buttons {
         flex-direction: column;
         gap: 10px;
+        width: 100%;
+        align-items: center;
     }
 
     .btn {
         width: 100%;
         text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 12px 20px;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .btn-whatsapp {
+        gap: 10px; /* Espaciado entre icono y texto */
+    }
+
+    .btn-whatsapp img {
+        width: 20px;
+        height: 20px;
     }
 
     /* Footer responsive */
