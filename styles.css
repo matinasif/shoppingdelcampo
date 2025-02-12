@@ -128,7 +128,7 @@ nav ul li a {
 }
 
 .image-content img {
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
     border-radius: 10px;
 }
@@ -274,4 +274,102 @@ footer {
     font-size: 16px;
     line-height: 1.5;
     color: #4B2D0E;
+}
+
+/* Estilos Responsivos */
+@media (max-width: 1024px) {
+    .main-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .text-content, .image-content {
+        flex: 1 1 100%;
+        padding: 20px;
+    }
+
+    .image-content img {
+        max-width: 80%;
+    }
+
+    .buttons {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Ajustar el navbar */
+    nav ul {
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+    }
+
+    /* Reducción del logo */
+    .logo img {
+        max-width: 300px;
+    }
+
+    /* Sección Nosotros */
+    .nosotros-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .mision, .vision {
+        flex: 1 1 100%;
+    }
+
+    /* Botón de WhatsApp */
+    .btn-whatsapp {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .btn-whatsapp img {
+        width: 16px;
+        height: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Ajustes generales para móviles */
+    body {
+        font-size: 14px;
+    }
+
+    .banner {
+        font-size: 12px;
+        padding: 8px 0;
+    }
+
+    .main-section {
+        padding: 15px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Footer responsive */
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-section {
+        flex: 1 1 100%;
+    }
+
+    .social-icons img {
+        width: 32px;
+        height: 32px;
+    }
 }
